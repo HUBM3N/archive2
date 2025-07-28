@@ -1,0 +1,13 @@
+exec autoexec.cfg
+refresh_options_dialog
+stuffcmds
+startupmenu
+sv_unlockedchapters 99
+tf_hud_target_id_disable_floating_health 1
+tf_spectator_target_location 0
+tf_contract_progress_show 0
+tf_contract_competitive_show 0
+tf_scoreboard_alt_class_icons 0
+cl_show_market_data_on_items 2
+cl_hud_killstreak_display_time 0
+tf_scoreboard_ping_as_text 1

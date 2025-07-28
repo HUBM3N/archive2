@@ -1,0 +1,11 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui\class_portraits\spy"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"%keywords" "tf"
+	"$translucent" 1
+	"$color" "[99 99 99]"
+}
+

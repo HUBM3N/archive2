@@ -1,0 +1,10 @@
+"Modulate"
+{
+	"$translucent" "1"
+	"$baseTexture" "vgui\replay\thumbnails\modulate"
+	
+	"$vertexcolor"	"1"
+	"$no_fullbright"	"1"	
+	"$vertexalpha"	"1"
+	"$ignorez"	"1"	
+}

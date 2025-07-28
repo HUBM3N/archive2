@@ -1,0 +1,35 @@
+"UnlitGeneric"
+{
+	"$translucent"	1
+	"$basetexture" "vgui\replay\thumbnails\cpma_18"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$speed" "0"
+	"$additive" "0"
+
+
+     $speed "0"
+			$comparison3 "361"
+		    $a3 "1"
+            $b3 "1"
+            $c3 "0"
+
+    Proxies
+    {
+          PlayerSpeed
+                {                
+                     scale                "1"     
+                     resultVar         "$speed"
+                 }
+		             LessOrEqual
+                {                
+                     srcVar1                 "$speed"   // if $x
+                      srcVar2                 "$comparison3"   // > $y       
+                     resultVar         "$frame"   // { $a =            
+                     greaterVar             "$b3"   // $b }
+                   LessEqualVar             "$c3"   // else { $a = $c }
+           }
+
+    }
+} 

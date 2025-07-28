@@ -1,0 +1,34 @@
+"UnlitGeneric"
+{
+    "$basetexture" "vgui/replay/thumbnails/mu"
+    "$translucent" 1
+    "$vertexcolor" 1
+    "$no_fullbright" 1
+    "$ignorez" 1
+
+     $speed "0"
+            $comparison "321"        
+            $a "1"
+            $b "1"
+            $c "0"
+
+    Proxies
+    {
+    
+          PlayerSpeed
+                {                
+                     scale                "1"     
+                     resultVar         "$speed"
+                 }
+
+          LessOrEqual
+                {                
+                     srcVar1                 "$speed"   // if $x
+                      srcVar2                 "$comparison"   // > $y       
+                     resultVar         "$frame"   // { $a =            
+                     greaterVar             "$b"   // $b }
+                   LessEqualVar             "$c"   // else { $a = $c }
+           }
+
+    }
+}

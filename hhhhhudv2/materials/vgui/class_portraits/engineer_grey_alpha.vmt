@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui\class_portraits\engineer"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$translucent" 1
+	"$color" "[99 99 99]"
+	"$color" "[99 99 99]"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+ 	"$model" 1
+	"$basetexture" "vgui\replay\thumbnails\scope\scope_sniper_ul"
+	"$translucent" "1"	
+}

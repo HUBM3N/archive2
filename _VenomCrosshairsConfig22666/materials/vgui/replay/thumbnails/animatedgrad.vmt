@@ -1,0 +1,33 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/animatedgrad"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$speed" 0
+	"$comparison" "11.3"        
+    "$a" "[1 0 0]"
+    "$b" "[0 1 0]"
+    "$c" "[1 0 0]"
+	Proxies {
+		PlayerSpeed {
+			scale "0.035"//0.5
+			resultVar $speed
+		}
+		Clamp {
+			min 0
+			max 3500
+			srcVar1 $speed
+			resultVar $frame
+		}
+		LessOrEqual
+        {                
+            srcVar1                 "$speed"   // if $x
+            srcVar2                 "$comparison"   // > $y       
+            resultVar         "$color"   // { $a =            
+            greaterVar             "$b"   // $b }
+            LessEqualVar             "$c"   // else { $a = $c }
+        }
+	}
+}

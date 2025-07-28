@@ -1,0 +1,48 @@
+"Resource/UI/SpectatorGUIHealth.res"
+{
+			"PlayerStatusHealthImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusHealthImage"
+		"xpos"			"3"
+		"ypos"			"3"
+		"zpos"			"4"
+		"wide"			"12"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+	}	
+		"PlayerStatusHealthImageBg"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusHealthImageBg"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"3"
+		"wide"			"12"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/hbg"
+		"scaleImage"	"1"	
+		"drawcolor" "black"
+		"pin_to_sibling" "PlayerStatusHealthImage"
+	}	
+		"PlayerStatusHealthValue"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"PlayerStatusHealthValue"
+		"xpos"										"13"
+		"ypos"										"0"
+		"zpos"										"20"
+		"wide"										"30"
+		"tall"										"17"
+		"visible"									"1"
+		"enabled"									"1"
+		"textAlignment"								"center"
+		"labeltext"									"%Health%"
+		"font"										"HudFontMediumSmallBold"
+		"fgcolor"									"White"
+	}
+}

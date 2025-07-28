@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui\replay\thumbnails\class_portraits\scout"
+    "$translucent"    1	
+    "$vertexcolor" 1
+    "$no_fullbright" 1
+    "$ignorez" 1
+}
+

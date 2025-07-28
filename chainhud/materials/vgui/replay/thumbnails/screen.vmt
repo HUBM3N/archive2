@@ -1,0 +1,7 @@
+"modulate"
+{
+	"$baseTexture" "vgui/replay/thumbnails/modulate"
+	"$vertexcolor"		"1"
+	"$vertexalpha"		"1"
+	"$writez" "1"
+}

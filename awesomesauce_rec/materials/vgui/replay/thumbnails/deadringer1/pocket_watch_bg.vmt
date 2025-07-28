@@ -1,0 +1,36 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui/replay/thumbnails/deadringer/pocket_watch_BG"
+	"$translucent" "1"
+
+//              The rest of this is to get the texture to rotate.
+
+	"$angle" 0.0
+	"$allenscott_scale" -0.78
+//             Since the textures edges would appear in itself when rotating I had to make the circle smaller and then scale up the texture using the "scaleVar" you see here.
+      	"$translate" "[0.0 0.0]"
+//             Despite the fact I have no intention of translating the texture at all, the whole proxy wont work unless it has the translation variable include for some reason.
+        	"$allenscott_center" "[0.5 0.5]"
+//             Most tutorials will have you put [-0.5 -0.5] as the center of a rotating texture. This will not work if you want it to be the center of the actual texture. Simply remove the negative signs and it will rotate from the images origin.
+
+	"Proxies"
+        {
+            "LinearRamp"
+            {
+                "rate" -65
+                "initialValue" 0.0
+                "resultVar" "$angle"
+            }
+
+            "TextureTransform"
+            {
+                "translateVar" "$translate"
+                "rotateVar" "$angle"
+	"scaleVar" "$allenscott_scale"
+                "centerVar" "$allenscott_center"
+                "resultVar" "$basetexturetransform"
+            }
+        }
+}
+
+// Written by Allen Scott from Gamebanana.com

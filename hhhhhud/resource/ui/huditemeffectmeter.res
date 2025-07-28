@@ -1,0 +1,45 @@
+"Resource/UI/HudItemEffectMeter.res"
+{
+	"HudItemEffectMeter"
+	{
+		"fieldName"									"HudItemEffectMeter"
+		"xpos"										"cs-0.5"
+		"ypos"										"c115"
+		"zpos"										"0"
+		"wide"										"60"
+		"tall"										"8"
+		"visible"									"1"
+		"enabled"									"1"
+	}
+	"ItemEffectMeter"
+	{
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ItemEffectMeter"
+		"xpos"										"cs-0.5"
+		"ypos"										"cs-0.5-4"
+		"zpos"										"0"
+		"wide"										"f0"
+		"tall"										"1"
+		"visible"									"1"
+		"enabled"									"1"
+		"proportionaltoparent"						"1"
+		"bgcolor_override" "0 0 0 175"
+	}
+	"ItemEffectMeterLabel"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"ItemEffectMeterLabel"
+		"xpos"										"cs-0.5"
+		"ypos"										"cs-0.5+1"
+		"zpos"										"2"
+		"wide"										"f0"
+		"tall"										"f0"
+		"visible"									"1"
+		"enabled"									"0"
+		"proportionaltoparent"						"1"
+		"labelText"									"#TF_Ball"
+		"textAlignment"								"center"
+		"font"									"ScoreboardverySmall"
+		"disabledfgcolor2_override"					"white"
+	}
+}

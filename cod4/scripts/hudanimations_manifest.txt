@@ -1,0 +1,7 @@
+"HudAnimations_Manifest"
+{
+	"file" "scripts/hudanimations.txt"
+	"file" "scripts/hudanimations_m0re.txt"
+	"file" "scripts/crosshairs/crosshairs_animations.txt"
+	"file" "scripts/hudanimations_tf.txt"
+}

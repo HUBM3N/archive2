@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$translucent"	1
+	"$basetexture" "vgui\replay\thumbnails\scope"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$basetexturetransform" "center .5 .5 scale 0.6 0.6 rotate 0 translate 0 0"
+}

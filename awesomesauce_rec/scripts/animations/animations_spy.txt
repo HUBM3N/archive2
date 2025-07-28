@@ -1,0 +1,20 @@
+event HudSpyDisguiseChanged
+{
+	RunEvent HudSpyDisguiseHide	0.7
+}
+
+event HudSpyDisguiseHide
+{	
+}
+
+event HudSpyDisguiseFadeIn
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusClassImage			Alpha		"255"			Linear 0.0 0.0	
+}
+
+event HudSpyDisguiseFadeOut
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusClassImage			Alpha		"0"				Linear 0.0 0.0
+}

@@ -1,0 +1,24 @@
+"UnlitGeneric"
+{
+	"$translucent"	1
+	"$basetexture" "vgui/replay/thumbnails/crosshairs/unner"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$speed" "0"
+	//"$basetexturetransform" "center .5 .5 scale 2 2 rotate 0 translate 0 0"
+
+	Proxies {
+		PlayerSpeed {
+			scale "0.081"//0.5
+			resultVar $speed
+		}
+		Clamp {
+			min 0
+			max 3500
+			srcVar1 $speed
+			resultVar $frame
+		}
+	}
+	
+}

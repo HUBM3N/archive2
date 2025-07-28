@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture" "hud/health_color"
+	"$translucent" "1"
+	"$ignorez" "1"
+	"$color" "[0 0 0]"
+}
+
+

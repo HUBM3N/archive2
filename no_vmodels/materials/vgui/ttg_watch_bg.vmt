@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui/ttg_watch_BG"
+	"$translucent" "1"
+	"$alpha" "1"
+}
