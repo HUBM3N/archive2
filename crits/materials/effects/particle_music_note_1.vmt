@@ -1,0 +1,7 @@
+"Spritecard"
+{
+	"$additive" 1 "$basetexture"	"Effects/particle_music_note_1.vtf"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$translucent" 1
+}

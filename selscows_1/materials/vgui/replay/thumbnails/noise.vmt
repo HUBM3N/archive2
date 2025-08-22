@@ -1,0 +1,19 @@
+"Modulate"
+{
+	"$baseTexture" "vgui/replay/thumbnails/noise"
+	"$vertexcolor"		"1"
+	"$vertexalpha"		"1"
+	"$ignorez"			"1"
+	"$no_fullbright"	1
+	"%keywords" "tf"
+		"Proxies"
+		{
+			"AnimatedTexture"
+			{
+				"animatedtexturevar" "$basetexture"
+				"animatedtextureframenumvar" "$frame"
+				"animatedtextureframerate" 24
+			}
+		}
+
+}

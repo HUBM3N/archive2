@@ -1,0 +1,54 @@
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"175"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
+
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+}
+event HudHealthDyingPulse
+{	
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"185"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
+
+	Animate	PlayerStatusMaxHealthValue				FgColor	"CustomYellow"							Linear 	0.0 	0.0
+	Animate	PlayerStatusHealthValueBlur				FgColor	"255 75 75 75"							Linear 	0.0 	0.0
+	Animate	PlayerStatusHealthValue				FgColor	"158 158 158 255"							Linear 	0.0 	0.0
+
+	RunEvent HudHealthDyingPulseLoop				0.25
+}
+
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse					0.0
+	StopEvent HudHealthDyingPulseLoop 				0.0
+	
+	Animate	PlayerStatusMaxHealthValue				FgColor	"CustomLightGreen"						Linear 	0.0 	0.0
+	Animate	PlayerStatusHealthValueBlur				FgColor	"CustomGray"							Linear 	0.0 	0.0
+	Animate	PlayerStatusHealthValue				FgColor	"TanDark"							Linear 	0.0 	0.0
+
+}
+event DamagedPlayer
+{
+	Animate LastDamageValue			Alpha		"255"			Linear 0.0 0.0	
+	Animate LastDamageValue			Alpha		"255"			Linear 1.2 0.0	
+	Animate LastDamageValue			Alpha		"0"			Linear 1.2 0.7	
+    Animate LastDamageValueShadow			Alpha		"255"			Linear 0.0 0.0	
+	Animate LastDamageValueShadow			Alpha		"255"			Linear 1.1 0.0	
+	Animate LastDamageValueShadow			Alpha		"0"			Linear 1.1 0.7
+    Animate LastDamageValueBlur			Alpha		"255"			Linear 0.0 0.0	
+	Animate LastDamageValueBlur			Alpha		"255"			Linear 1.1 0.0	
+	Animate LastDamageValueBlur			Alpha		"0"			Linear 1.1 0.7
+
+}

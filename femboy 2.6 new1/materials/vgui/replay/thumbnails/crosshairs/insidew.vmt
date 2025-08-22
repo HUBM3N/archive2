@@ -1,0 +1,11 @@
+"Unlitgeneric"
+{
+	"$basetexture" 				"vgui/replay/thumbnails/crosshairs/insidew"
+	"$additive" 1
+	"$translucent" 				"1"
+	"$vertexcolor"				"1"
+//	"$color" 					"{ 0 0 0 }"
+	"$speed" 					"0"
+	
+	Proxies { PlayerSpeed { scale 0.1 resultVar $speed } Clamp { min 0 max 119 srcVar1 $speed resultVar $frame } }
+}

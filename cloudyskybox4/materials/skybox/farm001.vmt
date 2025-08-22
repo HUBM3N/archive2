@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$alpha" "0" "$baseTexture" "skybox/farm001"
+	"$translucent" 1
+	"$nofog" "1"
+	"%keywords" "tf"
+}

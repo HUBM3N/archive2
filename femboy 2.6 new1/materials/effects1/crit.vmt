@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+    "$baseTexture" 				"effects/crit"
+
+	"$translucent" 				"1"
+	"$vertexcolor"				"1"
+	"$vertexalpha"				"1"
+	"$color" 							"{ 179 216 173 }" //135 216 135
+}

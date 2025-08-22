@@ -1,0 +1,8 @@
+"SpriteCard"
+{
+	"$additive" 1 "$basetexture"	"Effects/knife01"
+	"$surfaceprop"	"no_decal"
+	"$translucent"	1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+}

@@ -1,0 +1,14 @@
+"Refract"
+{
+	"$normalmap" 				"vgui/replay/thumbnails/refract"
+
+	"$refractamount" 			"0.0"
+	"$refracttint" 				"{255 255 255}"
+	"$refractblur" 				"50" //1
+	"$bluramount" 				"50" //3
+	"$envmapsaturation" 	"0"
+	
+//	"<dx90" 					{ "$alpha" "0" }
+	"<dx90"						{ "$no_draw" "1" }
+}
+
