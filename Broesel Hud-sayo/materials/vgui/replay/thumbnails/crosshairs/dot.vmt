@@ -1,0 +1,9 @@
+"Unlitgeneric"
+{
+    "$basetexture" "vgui/replay/thumbnails/crosshairs/dot"
+    "$translucent" 1
+    "$vertexcolor" 1
+    "$no_fullbright" 1
+    "$ignorez" 1
+}
+

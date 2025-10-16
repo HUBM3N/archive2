@@ -1,0 +1,35 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/roll"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$alpha" "1"
+	"$basetexturetransform" "center .5 .5 scale 1 1 rotate -35 translate 0 0"
+     $speed "0"
+            $comparison "321"        
+            $a "1"
+            $b "1"
+            $c "0"
+
+    Proxies
+    {
+    
+          PlayerSpeed
+                {                
+                     scale                "1"     
+                     resultVar         "$speed"
+                 }
+
+          LessOrEqual
+                {                
+                     srcVar1                 "$speed"   // if $x
+                      srcVar2                 "$comparison"   // > $y       
+                     resultVar         "$frame"   // { $a =            
+                     greaterVar             "$b"   // $b }
+                   LessEqualVar             "$c"   // else { $a = $c }
+           }
+
+    }
+}

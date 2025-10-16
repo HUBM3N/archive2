@@ -1,0 +1,9 @@
+r_decal_cullsize 1
+exec joystick.cfg
+exec autoexec.cfg
+stuffcmds
+startupmenu
+sv_unlockedchapters 99
+
+wait 5; showconsole; incrementvar mat_aaquality -100 100 1; hideconsole       
+    

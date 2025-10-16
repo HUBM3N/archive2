@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture" 				"vgui/replay/thumbnails/xhair/xhair_p_1"
+	
+	"$translucent" 				"1"
+	"$vertexcolor" 				"1"
+	"$vertexalpha" 				"1"
+	"$no_fullbright" 			"1"
+	"$ignorez" 					"1"
+}
