@@ -1,0 +1,53 @@
+"Resource/UI/HudDamageAccount.res"
+{
+	"CDamageAccountPanel"
+	{
+		"fieldName"				"CDamageAccountPanel"
+		"text_x"				"0"
+		"text_y"				"0"
+		"delta_item_end_y"		"0"
+		"PositiveColor"			"Garm3nPlus"
+		"NegativeColor"			"Garm3nDamage"
+		"delta_lifetime"		"2.2"
+		"delta_item_font"	"Book19"
+		"delta_item_font_big"	"Book19"
+	}
+
+	"DamageAccountValue"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"DamageAccountValue"
+		"xpos"			"c-25"
+		"ypos"			"r98"
+		"zpos"			"2"
+		"wide"			"300"
+		"tall"			"29"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"delta_lifetime"		"10.0"
+		"textAlignment"	"center"
+		"fgcolor"		"Garm3nDamage"
+		"font"			"Book20"
+		"alpha" "0"
+	}
+		"DamageAccountValueShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"DamageAccountValueShadow"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"2"
+		"wide"			"300"
+		"tall"			"29"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"delta_lifetime"		"10.0"
+		"textAlignment"	"center"
+		"fgcolor"		"blurshadow"
+		"font"			"Book20Blur"
+		"alpha" "0"
+		"pin_to_sibling" "DamageAccountValue"
+	}
+}
