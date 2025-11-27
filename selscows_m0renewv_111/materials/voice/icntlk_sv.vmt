@@ -1,0 +1,25 @@
+"UnlitGeneric"
+{
+	"$translucent" 1
+	"$baseTexture" "vgui\animated\tf2_speaker_icon"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"%keywords" "tf"
+	"$scaleamount" "[-1 1]"
+	
+	"Proxies"
+		{
+			"AnimatedTexture"
+			{
+				"animatedtexturevar" "$basetexture"
+				"animatedtextureframenumvar" "$frame"
+				"animatedtextureframerate" 10
+			}
+		"TextureTransform"
+		{
+			"scaleVar" "$scaleamount"
+			"resultVar" "$basetexturetransform"
+		}
+		}
+}

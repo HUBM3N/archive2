@@ -1,0 +1,19 @@
+"UnlitTwoTexture"
+{
+	"$basetexture" "vgui/replay/thumbnails/sniperscope_numbers"
+	"$texture2" "vgui/replay/thumbnails/sniperscope_numbers2"
+	"$translucent" "1"
+	"$additive" "1"
+	"$ignorez" "1"
+	"$nofog" "1"
+
+	"Proxies"
+	{
+		"SniperRifleCharge"
+		{
+			"resultVar"	"$basetexturetransform"
+		}
+	}
+}
+
+
