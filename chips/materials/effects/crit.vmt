@@ -1,0 +1,20 @@
+"UnlitGeneric"
+{
+    "$baseTexture" 				"effects/crit"
+
+	"$translucent" 				"1"
+	"$vertexcolor"				"1"
+	"$vertexalpha"				"1"
+	//"$color" 					"{ 255 255 255 }" //135 216 135
+	
+	    Proxies
+    {
+        "Animatedtexture"
+    {
+    "Animatedtexturevar" "$Basetexture"
+    "Animatedtextureframenumvar" "$frame"
+    "Animatedtextureframerate" "24"
+    }
+
+    }
+}
