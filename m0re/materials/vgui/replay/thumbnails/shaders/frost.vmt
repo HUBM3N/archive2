@@ -1,0 +1,31 @@
+"Screenspace_General"
+{
+    // Ścieżka do Twojego skompilowanego shadera .vcs (bez rozszerzenia)
+    // Zakładając, że plik nazywa się frosted_glass.vcs
+    "$pixshader"    "frost_ps20b"
+
+    // Podstawowy sampler (Framebuffer ekranu)
+    "$basetexture"  "_rt_FullFrameFB"
+    
+    // Ignorowanie z-buffer, aby shader rysował się zawsze na wierzchu HUD-a
+    "$ignorez"      "1"
+    "$translucent"  "1"
+    "$nocull"       "1"
+
+    // --- PARAMETRY (Jeśli wystawiłeś je w kodzie C++) ---
+    // Jeśli używasz parametrów zdefiniowanych w HLSL jako 'static const', 
+    // te poniżej będą służyć tylko jako dokumentacja, chyba że 
+    // przepiąłeś je pod parametry materiału w kodzie źródłowym C++.
+
+    "$glass_distort" "0.015"
+    "$noise_scale"   "250.0"
+    "$tint_color"    "[1.0 1.0 1.0]"
+    "$tint_strength" "0.1"
+
+    // Pozwala na poprawne wyświetlanie w HUD
+    "Proxies"
+    {
+        // Tutaj możesz dodać animację szronu, np. TextureScroll, 
+        // jeśli Twój shader obsługuje przesunięcie UV w czasie.
+    }
+}

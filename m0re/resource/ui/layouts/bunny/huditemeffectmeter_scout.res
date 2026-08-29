@@ -1,0 +1,1 @@
+#base "huditemeffectmeterbunny.res"

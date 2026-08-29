@@ -1,0 +1,16 @@
+"Refract"
+{
+	<dx90
+	{
+		 	"$fallbackmaterial" "vgui/replay/thumbnails/dx8"
+	}
+	"$normalmap" 				"vgui/replay/thumbnails/refract"
+
+	"$refractamount" 			"0.0"
+	"$refracttint" 				"{175 175 175}"
+	"$refractblur" 				"1" //1
+	"$bluramount" 				"3" //3
+	"$envmapsaturation" 	"0"
+	
+}
+

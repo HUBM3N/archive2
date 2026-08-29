@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$translucent"	1
+	"$baseTexture" "vgui/replay/thumbnails/hp"
+	"$vertexcolor" 1
+	"$vertexAlpha" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$color" "{ 199 208 217 }" //134 164 199
+}

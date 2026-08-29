@@ -1,0 +1,1 @@
+::sPointServerCommandValue <- Convars.GetStr("sv_allow_point_servercommand"); 

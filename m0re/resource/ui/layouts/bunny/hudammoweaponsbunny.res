@@ -1,0 +1,136 @@
+"resource/ui/hudammoweapons.res"
+{
+	"HudWeaponAmmoBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HudWeaponAmmoBG"
+		"xpos"			"rs1-7"
+		
+		"ypos"			"r57"
+		"zpos"			"1"
+		"wide"			"93"
+		"tall"			"46"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/layouts/bunny/defaultammobunny"
+		"alpha"			"100"
+		"scaleImage"	"1"		
+	}
+	"HudWeaponLowAmmoImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HudWeaponLowAmmoImage"
+		"xpos"			"9994"
+		"visible"		"0"
+		"enabled"		"0"		
+	}
+	"AmmoInClip"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInClip"
+		"font"			"surface48"
+		
+		"fgcolor"		"254 254 254 255"
+		
+		"xpos"			"10"
+		
+		"ypos"			"2"
+		
+		"pin_to_sibling" "HudWeaponAmmoBG"
+		
+		"zpos"			"5"
+		"wide"			"65"
+		"tall"			"50"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"south-east"	
+		
+		"labelText"		"%Ammo%"
+		
+	}		
+	"AmmoInClipShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInClipShadow"
+		"font"			"surface48"
+		"pin_to_sibling" "HudWeaponAmmoBG"
+		"fgcolor"		"0 0 0 255"
+		"xpos"			"8"
+		"ypos"			"0"
+		"zpos"			"5"
+		"wide"			"65"
+		"tall"			"50"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"south-east"	
+		"labelText"		"%Ammo%"
+	}						
+	"AmmoInReserve"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInReserve"
+		"font"			"surface24"
+		"fgcolor"		"254 254 254 255"
+		"xpos"			"-59"
+		"ypos"			"-8"
+		"zpos"			"7"
+		"wide"			"40"
+		"tall"			"27"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"south-west"		
+		"labelText"		"%AmmoInReserve%"
+		"pin_to_sibling" "HudWeaponAmmoBG"
+	}		
+	"AmmoInReserveShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoInReserveShadow"
+		"font"			"surface24"
+		"fgcolor"		"0 0 0 255"
+		"xpos"			"-60"
+		"ypos"			"-9"
+		"zpos"			"7"
+		"wide"			"40"
+		"tall"			"27"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"south-west"		
+		"labelText"		"%AmmoInReserve%"
+		"pin_to_sibling" "HudWeaponAmmoBG"
+	}									
+	"AmmoNoClip"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoNoClip"
+		"font"			"surface48"
+		"fgcolor"		"254 254 254 255"
+		"xpos"			"5"
+		"ypos"			"4"
+		"zpos"			"5"
+		"wide"			"94"
+		"tall"			"50"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"south-east"		
+		"labelText"		"%Ammo%"
+        "pin_to_sibling" "HudWeaponAmmoBG"
+	}	
+	"AmmoNoClipShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AmmoNoClipShadow"
+		"font"			"surface48"
+		"fgcolor"		"0 0 0 255"
+		"xpos"			"4"
+		"ypos"			"3"
+		"zpos"			"5"
+		"wide"			"94"
+		"tall"			"50"
+		"visible"		"0"
+		"enabled"		"1"
+		"textAlignment"	"south-east"		
+		"labelText"		"%Ammo%"
+		"pin_to_sibling" "HudWeaponAmmoBG"
+	}									
+}

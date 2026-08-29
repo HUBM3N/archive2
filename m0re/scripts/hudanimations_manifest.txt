@@ -1,0 +1,13 @@
+hudanimations_manifest
+{
+	// custom animations
+	"file"	"scripts/hudanimations_custom.txt"
+	"file"	"scripts/hudanimations_removed.txt"
+	
+	// default to reference
+	"file"	"scripts/base/hudanimations_tf.txt"	
+	
+	// default to override
+	"file"	"scripts/hudanimations.txt"
+	"file"	"scripts/hudanimations_tf.txt"	
+}

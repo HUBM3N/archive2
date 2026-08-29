@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui/pocket_watch_FG"
+	"$translucent" "1"
+	"$vertexcolor"				"0"
+	"$vertexalpha"				"1"
+	"$color" 							"{ 129 148 170 }" //135 216 135
+}

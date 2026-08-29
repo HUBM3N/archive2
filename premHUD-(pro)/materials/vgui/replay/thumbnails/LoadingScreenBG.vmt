@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui\replay\thumbnails\LoadingScreenBG"
+	"$translucent" 1
+}

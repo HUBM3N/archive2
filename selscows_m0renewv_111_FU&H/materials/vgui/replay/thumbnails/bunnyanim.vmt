@@ -1,0 +1,20 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/bunnyanim"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$alpha" "1"
+
+    Proxies
+    {
+        "Animatedtexture"
+    {
+    "Animatedtexturevar" "$Basetexture"
+    "Animatedtextureframenumvar" "$frame"
+    "Animatedtextureframerate" "24"
+    }
+
+    }
+}

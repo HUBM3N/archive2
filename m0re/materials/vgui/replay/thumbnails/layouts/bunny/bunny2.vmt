@@ -1,0 +1,11 @@
+"UnlitGeneric"
+{
+	"$translucent"	1
+	"$baseTexture" "vgui/replay/thumbnails/layouts\bunny\bunny2"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	//"$additive" 1
+	//"$color" "{ 199 208 217 }" 
+	//134 164 199
+}

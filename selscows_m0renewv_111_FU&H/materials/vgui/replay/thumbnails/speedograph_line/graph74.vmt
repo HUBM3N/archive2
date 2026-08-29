@@ -1,0 +1,1005 @@
+//SpeedoGraph by VillageGreenPreserver
+//https://github.com/VillageGreenPreserver/SpeedoGraph
+
+"UnlitGeneric"
+{
+	"$basetexture"		"vgui/replay/thumbnails/speedograph_line/graph"
+	"$translucent"		1
+	"$ignorez"			1
+	"$vertexalpha"		"1"
+	"$vertexcolor"		"1"
+
+	"$zero"		"0"
+	"$one"		"1"
+	"$ten"		"10"
+
+	"$speed"			"0"
+	"$speedMax"			"0.965"
+	"$speedClamped"		"0.0"
+	"$speedScale"		"0.0005"
+	"$time"				"0"
+	"$delay"			"0.025"
+
+	"$bucket01"		"0"
+	"$bucket02"		"0"
+	"$bucket03"		"0"
+	"$bucket04"		"0"
+	"$bucket05"		"0"
+	"$bucket06"		"0"
+	"$bucket07"		"0"
+	"$bucket08"		"0"
+	"$bucket09"		"0"
+	"$bucket10"		"0"
+
+	"$bucket11"		"0"
+	"$bucket12"		"0"
+	"$bucket13"		"0"
+	"$bucket14"		"0"
+	"$bucket15"		"0"
+	"$bucket16"		"0"
+	"$bucket17"		"0"
+	"$bucket18"		"0"
+	"$bucket19"		"0"
+	"$bucket20"		"0"
+
+	"$bucket21"		"0"
+	"$bucket22"		"0"
+	"$bucket23"		"0"
+	"$bucket24"		"0"
+	"$bucket25"		"0"
+	"$bucket26"		"0"
+	"$bucket27"		"0"
+	"$bucket28"		"0"
+	"$bucket29"		"0"
+	"$bucket30"		"0"
+
+	"$bucket31"		"0"
+	"$bucket32"		"0"
+	"$bucket33"		"0"
+	"$bucket34"		"0"
+	"$bucket35"		"0"
+	"$bucket36"		"0"
+	"$bucket37"		"0"
+	"$bucket38"		"0"
+	"$bucket39"		"0"
+	"$bucket40"		"0"
+	
+	"$bucket41"		"0"
+	"$bucket42"		"0"
+	"$bucket43"		"0"
+	"$bucket44"		"0"
+	"$bucket45"		"0"
+	"$bucket46"		"0"
+	"$bucket47"		"0"
+	"$bucket48"		"0"
+	"$bucket49"		"0"
+	"$bucket50"		"0"
+	
+	"$bucket51"		"0"
+	"$bucket52"		"0"
+	"$bucket53"		"0"
+	"$bucket54"		"0"
+	"$bucket55"		"0"
+	"$bucket56"		"0"
+	"$bucket57"		"0"
+	"$bucket58"		"0"
+	"$bucket59"		"0"
+	"$bucket60"		"0"
+	
+	"$bucket61"		"0"
+	"$bucket62"		"0"
+	"$bucket63"		"0"
+	"$bucket64"		"0"
+	"$bucket65"		"0"
+	"$bucket66"		"0"
+	"$bucket67"		"0"
+	"$bucket68"		"0"
+	"$bucket69"		"0"
+	"$bucket70"		"0"
+	
+	"$bucket71"		"0"
+	"$bucket72"		"0"
+	"$bucket73"		"0"
+	"$bucket74"		"0"
+	"$bucket75"		"0"
+	"$bucket76"		"0"
+	"$bucket77"		"0"
+	"$bucket78"		"0"
+	"$bucket79"		"0"
+	"$bucket80"		"0"
+	
+	"$bucket81"		"0"
+	"$bucket82"		"0"
+	"$bucket83"		"0"
+	"$bucket84"		"0"
+	"$bucket85"		"0"
+	"$bucket86"		"0"
+	"$bucket87"		"0"
+	"$bucket88"		"0"
+	"$bucket89"		"0"
+	"$bucket90"		"0"
+	
+	"$bucket91"		"0"
+	"$bucket92"		"0"
+	"$bucket93"		"0"
+	"$bucket94"		"0"
+	"$bucket95"		"0"
+	"$bucket96"		"0"
+	"$bucket97"		"0"
+	"$bucket98"		"0"
+	"$bucket99"		"0"
+	"$bucket100"		"0"
+
+	"$timeDelay"		"0"
+	"$timeDelayTemp"	"0"
+
+	"$center"		"[0.5 0.5]"
+	"$scale"		"[1 1]"
+	"$rotate"		"0"
+	"$translate"	"[0.0 0.0]"
+
+	Proxies
+	{
+
+		CurrentTime
+		{
+			resultVar	"$time"
+		}
+
+		Add
+		{
+			srcVar1		"$time"
+			srcVar2		"$delay"
+			resultVar	"$timeDelayTemp"
+		}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket100"
+	greaterVar		"$bucket100"
+	lessEqualVar	"$bucket99"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket99"
+	greaterVar		"$bucket99"
+	lessEqualVar	"$bucket98"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket98"
+	greaterVar		"$bucket98"
+	lessEqualVar	"$bucket97"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket97"
+	greaterVar		"$bucket97"
+	lessEqualVar	"$bucket96"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket96"
+	greaterVar		"$bucket96"
+	lessEqualVar	"$bucket95"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket95"
+	greaterVar		"$bucket95"
+	lessEqualVar	"$bucket94"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket94"
+	greaterVar		"$bucket94"
+	lessEqualVar	"$bucket93"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket93"
+	greaterVar		"$bucket93"
+	lessEqualVar	"$bucket92"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket92"
+	greaterVar		"$bucket92"
+	lessEqualVar	"$bucket91"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket91"
+	greaterVar		"$bucket91"
+	lessEqualVar	"$bucket90"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket90"
+	greaterVar		"$bucket90"
+	lessEqualVar	"$bucket89"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket89"
+	greaterVar		"$bucket89"
+	lessEqualVar	"$bucket88"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket88"
+	greaterVar		"$bucket88"
+	lessEqualVar	"$bucket87"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket87"
+	greaterVar		"$bucket87"
+	lessEqualVar	"$bucket86"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket86"
+	greaterVar		"$bucket86"
+	lessEqualVar	"$bucket85"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket85"
+	greaterVar		"$bucket85"
+	lessEqualVar	"$bucket84"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket84"
+	greaterVar		"$bucket84"
+	lessEqualVar	"$bucket83"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket83"
+	greaterVar		"$bucket83"
+	lessEqualVar	"$bucket82"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket82"
+	greaterVar		"$bucket82"
+	lessEqualVar	"$bucket81"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket81"
+	greaterVar		"$bucket81"
+	lessEqualVar	"$bucket80"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket80"
+	greaterVar		"$bucket80"
+	lessEqualVar	"$bucket79"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket79"
+	greaterVar		"$bucket79"
+	lessEqualVar	"$bucket78"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket78"
+	greaterVar		"$bucket78"
+	lessEqualVar	"$bucket77"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket77"
+	greaterVar		"$bucket77"
+	lessEqualVar	"$bucket76"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket76"
+	greaterVar		"$bucket76"
+	lessEqualVar	"$bucket75"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket75"
+	greaterVar		"$bucket75"
+	lessEqualVar	"$bucket74"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket74"
+	greaterVar		"$bucket74"
+	lessEqualVar	"$bucket73"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket73"
+	greaterVar		"$bucket73"
+	lessEqualVar	"$bucket72"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket72"
+	greaterVar		"$bucket72"
+	lessEqualVar	"$bucket71"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket71"
+	greaterVar		"$bucket71"
+	lessEqualVar	"$bucket70"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket70"
+	greaterVar		"$bucket70"
+	lessEqualVar	"$bucket69"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket69"
+	greaterVar		"$bucket69"
+	lessEqualVar	"$bucket68"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket68"
+	greaterVar		"$bucket68"
+	lessEqualVar	"$bucket67"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket67"
+	greaterVar		"$bucket67"
+	lessEqualVar	"$bucket66"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket66"
+	greaterVar		"$bucket66"
+	lessEqualVar	"$bucket65"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket65"
+	greaterVar		"$bucket65"
+	lessEqualVar	"$bucket64"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket64"
+	greaterVar		"$bucket64"
+	lessEqualVar	"$bucket63"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket63"
+	greaterVar		"$bucket63"
+	lessEqualVar	"$bucket62"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket62"
+	greaterVar		"$bucket62"
+	lessEqualVar	"$bucket61"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket61"
+	greaterVar		"$bucket61"
+	lessEqualVar	"$bucket60"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket60"
+	greaterVar		"$bucket60"
+	lessEqualVar	"$bucket59"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket59"
+	greaterVar		"$bucket59"
+	lessEqualVar	"$bucket58"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket58"
+	greaterVar		"$bucket58"
+	lessEqualVar	"$bucket57"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket57"
+	greaterVar		"$bucket57"
+	lessEqualVar	"$bucket56"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket56"
+	greaterVar		"$bucket56"
+	lessEqualVar	"$bucket55"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket55"
+	greaterVar		"$bucket55"
+	lessEqualVar	"$bucket54"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket54"
+	greaterVar		"$bucket54"
+	lessEqualVar	"$bucket53"
+}
+LessOrEqual
+{
+	srcVar1			"$timeDelay"
+	srcVar2			"$time"
+	resultVar		"$bucket53"
+	greaterVar		"$bucket53"
+	lessEqualVar	"$bucket52"
+}
+								LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket52"
+			greaterVar		"$bucket52"
+			lessEqualVar	"$bucket51"
+		}
+								LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket51"
+			greaterVar		"$bucket51"
+			lessEqualVar	"$bucket50"
+		}
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket50"
+			greaterVar		"$bucket50"
+			lessEqualVar	"$bucket49"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket49"
+			greaterVar		"$bucket49"
+			lessEqualVar	"$bucket48"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket48"
+			greaterVar		"$bucket48"
+			lessEqualVar	"$bucket47"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket47"
+			greaterVar		"$bucket47"
+			lessEqualVar	"$bucket46"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket46"
+			greaterVar		"$bucket46"
+			lessEqualVar	"$bucket45"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket45"
+			greaterVar		"$bucket45"
+			lessEqualVar	"$bucket44"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket44"
+			greaterVar		"$bucket44"
+			lessEqualVar	"$bucket43"
+		}	
+						LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket43"
+			greaterVar		"$bucket43"
+			lessEqualVar	"$bucket42"
+		}	
+				LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket42"
+			greaterVar		"$bucket42"
+			lessEqualVar	"$bucket41"
+		}	
+				LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket41"
+			greaterVar		"$bucket41"
+			lessEqualVar	"$bucket40"
+		}	
+
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket40"
+			greaterVar		"$bucket40"
+			lessEqualVar	"$bucket39"
+		}		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket39"
+			greaterVar		"$bucket39"
+			lessEqualVar	"$bucket38"
+		}	
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket38"
+			greaterVar		"$bucket38"
+			lessEqualVar	"$bucket37"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket37"
+			greaterVar		"$bucket37"
+			lessEqualVar	"$bucket36"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket36"
+			greaterVar		"$bucket36"
+			lessEqualVar	"$bucket35"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket35"
+			greaterVar		"$bucket35"
+			lessEqualVar	"$bucket34"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket34"
+			greaterVar		"$bucket34"
+			lessEqualVar	"$bucket33"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket33"
+			greaterVar		"$bucket33"
+			lessEqualVar	"$bucket32"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket32"
+			greaterVar		"$bucket32"
+			lessEqualVar	"$bucket31"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket31"
+			greaterVar		"$bucket31"
+			lessEqualVar	"$bucket30"
+		}	
+		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket30"
+			greaterVar		"$bucket30"
+			lessEqualVar	"$bucket29"
+		}		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket29"
+			greaterVar		"$bucket29"
+			lessEqualVar	"$bucket28"
+		}	
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket28"
+			greaterVar		"$bucket28"
+			lessEqualVar	"$bucket27"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket27"
+			greaterVar		"$bucket27"
+			lessEqualVar	"$bucket26"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket26"
+			greaterVar		"$bucket26"
+			lessEqualVar	"$bucket25"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket25"
+			greaterVar		"$bucket25"
+			lessEqualVar	"$bucket24"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket24"
+			greaterVar		"$bucket24"
+			lessEqualVar	"$bucket23"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket23"
+			greaterVar		"$bucket23"
+			lessEqualVar	"$bucket22"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket22"
+			greaterVar		"$bucket22"
+			lessEqualVar	"$bucket21"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket21"
+			greaterVar		"$bucket21"
+			lessEqualVar	"$bucket20"
+		}	
+		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket20"
+			greaterVar		"$bucket20"
+			lessEqualVar	"$bucket19"
+		}		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket19"
+			greaterVar		"$bucket19"
+			lessEqualVar	"$bucket18"
+		}	
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket18"
+			greaterVar		"$bucket18"
+			lessEqualVar	"$bucket17"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket17"
+			greaterVar		"$bucket17"
+			lessEqualVar	"$bucket16"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket16"
+			greaterVar		"$bucket16"
+			lessEqualVar	"$bucket15"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket15"
+			greaterVar		"$bucket15"
+			lessEqualVar	"$bucket14"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket14"
+			greaterVar		"$bucket14"
+			lessEqualVar	"$bucket13"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket13"
+			greaterVar		"$bucket13"
+			lessEqualVar	"$bucket12"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket12"
+			greaterVar		"$bucket12"
+			lessEqualVar	"$bucket11"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket11"
+			greaterVar		"$bucket11"
+			lessEqualVar	"$bucket10"
+		}
+		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket10"
+			greaterVar		"$bucket10"
+			lessEqualVar	"$bucket09"
+		}		
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket09"
+			greaterVar		"$bucket09"
+			lessEqualVar	"$bucket08"
+		}	
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket08"
+			greaterVar		"$bucket08"
+			lessEqualVar	"$bucket07"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket07"
+			greaterVar		"$bucket07"
+			lessEqualVar	"$bucket06"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket06"
+			greaterVar		"$bucket06"
+			lessEqualVar	"$bucket05"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket05"
+			greaterVar		"$bucket05"
+			lessEqualVar	"$bucket04"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket04"
+			greaterVar		"$bucket04"
+			lessEqualVar	"$bucket03"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket03"
+			greaterVar		"$bucket03"
+			lessEqualVar	"$bucket02"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket02"
+			greaterVar		"$bucket02"
+			lessEqualVar	"$bucket01"
+		}
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$bucket01"
+			greaterVar		"$bucket01"
+			lessEqualVar	"$speedClamped"
+		}
+
+		PlayerSpeed
+		{
+			scale		"1"
+			resultVar	"$speed"
+		}
+
+		Multiply
+		{
+			srcVar1		"$speed"
+			srcVar2		"$speedScale"
+			resultVar	"$speed"
+		}
+
+		Clamp
+		{
+			min			"$zero"
+			max			"$speedMax"
+			srcVar1		"$speed"
+			resultVar	"$speedClamped"
+		}
+
+		Equals
+		{
+			srcVar1		"$bucket74"
+			resultVar	"$translate[1]"
+		}
+
+		TextureTransform
+		{
+			centerVar		"$center"
+			scaleVar		"$scale"
+			rotateVar		"$rotate"
+			translateVar	"$translate"
+			resultVar		"$basetexturetransform"
+		}
+
+		LessOrEqual
+		{
+			srcVar1			"$timeDelay"
+			srcVar2			"$time"
+			resultVar		"$timeDelay"
+			greaterVar		"$timeDelay"
+			lessEqualVar	"$timeDelayTemp"
+		}
+	}
+}

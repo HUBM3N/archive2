@@ -1,0 +1,67 @@
+#base "base/huddamageaccount.res"
+"resource/ui/huddamageaccount.res"
+{
+	"CDamageAccountPanel"
+	{
+		"ypos" 					"-30"
+		"PositiveColor"			"Heal Numbers"
+		"NegativeColor"			"Damage Numbers"
+		"delta_lifetime"		"1.33"
+		"delta_item_font"		"chrome5low"
+		"delta_item_font_big"	"chrome5low"
+	}
+	
+	"DamageAccountValue"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"DamageAccountValue"
+		"xpos"					"cs-0.5"
+		"ypos"					"c128"
+		"zpos"					"2"
+		"wide"					"100"
+		"tall"					"25"
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				"%metal%"
+		"textAlignment"			"center"
+		"fgcolor"				"Last Damage done"
+		"font"					"chrome7low"
+		"alpha" "255"
+	}
+		"DamageAccountValue2"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"DamageAccountValue2"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"2"
+		"wide"					"100"
+		"tall"					"25"
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				"%metal%"
+		"textAlignment"			"center"
+		"fgcolor"				"Last Damage done"
+		"font"					"chrome7low"
+		"alpha" "255"
+		"pin_to_sibling" "DamageAccountValue"
+	}
+	
+	"DamageAccountValueBG"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"DamageAccountValueBG"
+		"xpos"					"-1"
+		"ypos"					"-1"
+		"zpos"					"1"
+		"wide"					"101"
+		"tall"					"27"
+		"visible"				"0"
+		"enabled"				"1"
+		"labelText"				"%metal%"
+		"textAlignment"			"center"
+		"fgcolor"				"42 39 37 255"
+		"font"					"surface8"
+		"pin_to_sibling" "DamageAccountValue"
+	}
+}

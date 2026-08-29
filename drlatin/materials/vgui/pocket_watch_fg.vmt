@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "vgui/pocket_watch_fG"
+	"$translucent" "1"
+	"$color" "[0 0 0]"
+}

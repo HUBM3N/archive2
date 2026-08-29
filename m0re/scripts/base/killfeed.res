@@ -1,0 +1,1 @@
+#base "../../../../cfg/killfeed.txt"

@@ -1,0 +1,12 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/dx8"
+	"$translucent" "1"
+	"$ignorez" "1"
+	"$vertexcolor"		"1"
+	"$vertexalpha"		"1"
+	"$color" "{0 0 0}"
+	"$alpha" "0.3"
+}
+
+
